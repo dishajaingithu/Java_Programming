@@ -1,0 +1,192 @@
+Class & Object ->
+
+	* Class is a Blurprint or Prototype from which object is created.
+	* Object is a Instance of Class.
+	* Characteristics of object 
+	 	1) State -> Represents the data of an object.
+	 	2) Behaviour -> Represents the behaviour object such as deposit,withdraw etc.
+		3) Identity -> It is used by the JVM tp identity each object uniquely.
+
+Access Modifier ->
+	
+	* public
+	* private
+	* protected
+	* default
+
+Constructor ->
+	* Name of the Class and Constructor is Same.
+	* When we create the Object,Implicitly calls go to the Contructor.
+	* In Java,Default Constructor is always present.
+	* Constructor is Used to initialize the Instance/Object Variable.
+	* Constructor is a Special type of Method having no return Type.
+	* Their are three types of Constructor ->
+		1) Default Constructor.
+		2) No-argument Constructor.
+		3) Parameterized Constructor.
+		4) Copy Constructor.
+
+Static Keyword ->
+		1) Static Block ->
+			* Static Block is Always Come first and then Main Block Code Executes.
+			* For the Network OR JDBC Connection Static Block is Used.
+			* In Static Block,static Varibale is Initialize.
+			* In Static Block,return statemnet is present at the end of the block.
+		2) Static Variable
+		3) Static Method
+
+Static & Instance Concept ->
+		* Instance Variable is Object Specific.
+		* Static Variable is Common for All Objects ex.Apartment's Swimming Pool.
+
+Instance ->
+		1) Instance Block ->
+			* Instance Block is Nothing But Constructor.
+			* When we create the object then first calls go the Instance Block and then Contructor
+			* Instance Block Combine with the Constructor.
+			* Why we use the Instance Block ?
+			-> If We Want to Write the logic that we want to execute on the creation of all
+			   kinds of Objects.
+			* super() is not allowed in a Instance Block.
+		2) Instance Variable
+			* Non-Static Global Variable called the Inatance Variable.
+			* Memory for Instance Variable assign only after the Object Creation.
+		3) Instance Method
+			* In Instance Method,we can use the static and instance variable.
+			* To call the instance Method,we have to compulsory make the Object.
+
+
+Abstract Class :
+	* Abstract class is a class that is declared 'abstract'.
+	* It may or may not include abstract methods.
+	* Abstract class cannot be instantiated.
+	* Abstract method can only be used in an abstract class, and it does not have a body.
+	* The Method body is provided by subclass(inherited from).
+	* Method Declaration only in class.
+	* We can't create Oject of Abstract class because Compiler Consider our class is incomplete.
+	* Contructor is Present the abstract class.
+	
+	SYNTAX :
+	abstract class DemoAbstract{
+		void abc();
+	}
+
+
+
+Interface :
+	
+	* 'interface' keyword is used to define the Interface.
+	* Interface is Used to achieve the Multiple Inheritance.
+	* Interface is Not a Class.
+	* Object class in not a Parent of Interface.
+	* We can't create the Object of Interface but we can use the interface as a reference and object of 
+	  class i.e., cannot be instantiated.(IndialCulture obj = new UP();)
+	* Constructor is not present in Interface.
+	* Bydefault All methods are public abstract in Interface.
+	* Interface Abstract method may or may not be have the body.
+	  ie.1) way 1-> default void method1(){
+	  		
+	  	       }
+	        Note : We can give the Body to the method inInterface using like this and also child override
+	               this method.
+	      2) Way 2-> static void method1(){
+	      	      	}
+	        Note : We Can give the Body to the method in Interface using like this but in Child we Can't
+	               Override the Method.
+	* We can use the 'implements' keyword to implement the methods in interface to another
+	  class.
+	Syntax:
+		interface IndianCulture{
+			void festival();
+		}
+		class UP implements IndianCulture{
+			public void festival(){
+			}
+		}
+	
+	Types Of Interface :
+	1) Marker Interface.
+		* A Marker Interface is an interface that doesn't have any method or constants
+		  inside it.
+		* It Provides Runtime type information about the Objects.
+		SYNTAX :
+			interface A {
+				
+			}
+		* Marker Interface are :
+			I)Serializable Interface.
+	       	       II)Clonable Interface.
+	              III)Random Access Interface.
+
+
+Inheritance ->
+
+	* In Inheritance,Parent and Child relation is Compulsory.
+	* To Make the Parent and Child Relation,'extends' keyword is Necessary.
+	ex:
+		class Parent{
+
+		}
+		class Child extends Parent{
+
+		}
+
+	Types of Inheritance :-
+
+	1) Single Inheritance :-
+		* In single inheritance,a sub-class is derived from only one super class.
+		* It inherits the properties and behavior of a single-parent class.
+		ex : A
+		     |
+		     B
+		    ‘A’ is a parent class and ‘B’ is a child class.
+		    The Class 'B' inherits all properties of the class 'A'.
+
+	2) Multilevel Inheritance
+		* In Multilevel inheritance,a derived will be inheriting a base class and as well
+		  as the derived class also acts as the base class for the other classes
+		ex : A -> Base Class
+		     |
+		     B -> Intermediatory Class
+		     |
+		     C -> Derived Class
+
+	3) Hierarchical Inheritance
+		* In Hierarchical Inheritance, one class serves as a superclass (base class)
+		  for more than one subclass.
+		* class A serves as a base class for the derived classes B, C, and D.
+		ex : 		A -> 		Base Class
+			|	|	|
+			B	C	D	Derived Class
+
+	4) Multiple Inheritance 
+		* In Multiple inheritances, one class can have more than one superclass and inherit
+		  feature from all parents class.
+		Note:Java does not support multiple inheritances with classes.
+	5) Hybrid Inheritance
+		* It is a mix of two or more of the above types of Inheritanve.
+	Note:Java does not support hybrid inheritance.
+	ex :		A
+       		B		C
+			D
+
+
+Polymorphism :
+
+ 	* Polymorphism is derived from two Greek Words,"Poly" and "morph",which means 'many' and 'forms'
+	  respectively.Hence,Polymorphism meaning in Java refers to the ability of Objects to take
+	  on many Forms.
+	* Types of Polymorphism :
+
+	  1)Compile Time Binding (Method Overloading).
+	  	* The Methods with the same name can have different numbers of parameters,different
+		  types of Parameters or different orders of Parameters in Method.
+
+	  2)Run Time Binding(Method Overriding).
+	  	* It is a type of runtime polymorphism where the method in the subclass overrides
+		  the method in the superclass,which has the same "name,parameters and Return Type"
+		* Here the method to be called is based on the instance of the subclass,which is assign
+		  to a reference variable of the superclass.
+		Note : Compulsory Required the Parent-Child Relation.
+
+
