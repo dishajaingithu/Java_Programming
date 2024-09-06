@@ -1,0 +1,70 @@
+Iterative Statements / Loops ->
+		1) for Loop
+			syntax ->       1               2		     4
+				for(initialization; condition; increment/decrement/expression){
+					      3
+					//code or body 
+				}
+
+		2) while loop
+			
+			syntax ->
+				initialization
+				while(condition){
+					//code or body
+
+					increment/decrement/expression
+				}
+
+		3) do-while loop -> It Execute at least Once.
+			
+			syntax ->
+				do{
+					//code or body
+				}while(condition);
+
+
+String ->
+	* String is a Immutable Class.
+	* String is place in a java.lang Package.
+	ex : String name = "Disha";
+
+	String Methods :-
+	
+  1) public int length();
+  2) public boolean isEmpty();
+  3) public char charAt(int);
+  4) public boolean equals(java.lang.Object);
+  5) public boolean contentEquals(java.lang.StringBuffer);
+  6) public boolean contentEquals(java.lang.CharSequence);
+  7) public boolean equalsIgnoreCase(java.lang.String);
+  8) public int compareTo(java.lang.String);
+  9) public int compareToIgnoreCase(java.lang.String);
+  10) public boolean startsWith(java.lang.String, int);
+  11) public boolean startsWith(java.lang.String);
+  12) public boolean endsWith(java.lang.String);
+  13) public int indexOf(int);
+  14) public int indexOf(int, int);
+  15) public int lastIndexOf(int);
+  16) public int lastIndexOf(int, int);
+  17) public int indexOf(java.lang.String);
+  18) public int indexOf(java.lang.String, int);
+  19) static int indexOf(byte[], byte, int, java.lang.String, int);
+  20) public int lastIndexOf(java.lang.String);
+  21) public int lastIndexOf(java.lang.String, int);
+  22) public java.lang.String substring(int);
+  23) public java.lang.String substring(int, int);
+  24) public java.lang.String concat(java.lang.String);
+  25) public java.lang.String replace(char, char);
+  26) public java.lang.String replaceFirst(java.lang.String, java.lang.String);
+  27) public java.lang.String replaceAll(java.lang.String, java.lang.String);
+  28) public java.lang.String replace(java.lang.CharSequence, java.lang.CharSequence);
+  29) public java.lang.String[] split(java.lang.String, int);
+  30) public java.lang.String[] split(java.lang.String);
+  31) public java.lang.String toLowerCase();
+  32) public java.lang.String toUpperCase();
+  33) public java.lang.String trim();
+  34) public java.lang.String strip();
+  35) public java.lang.String toString();
+  36) public char[] toCharArray();
+  37) public int compareTo(java.lang.Object);	 
