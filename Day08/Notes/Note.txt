@@ -1,0 +1,22 @@
+        Recursion :
+
+        * A function which call itself again and again.
+        * ex :
+                void func(){
+
+                        func();
+                }
+        * Base Condition is Must in Recursion to avoid the 'StackOverflowError'.
+	* Tail Recursion is More Optimized than Non-Tail Recursion.
+        * Their are Two Types of Recursion :
+
+                1) Tail Recursion -
+                                                                                                                                             * It is defined as a recursive function in which the recursive call is the last statement                            * ex :                                                                                                                       void print(int[] arr,int s1){                                                                                                                                                                                                                     if(s1 >= arr.length){                                                                                                        return;                                                                                                      }                                                                                                                    System.out.println(arr[i]);                                                                                                                                                                                                               print(arr,s1+1);        //This line identifies the Tail Recursion.                                           }                                                                                                    2) Non-Tail Recursion -                                                                                                                                                                                                                           * It's defined as recursive function in which the recursive call in not the last statement                           * ex :                                                                                                                       void print(int[] arr,int s1){
+
+					if(s1 >= arr.length){
+						return;
+					}
+					print(arr,s1+1);
+					System.out.println(arr[i]);
+				}
+
